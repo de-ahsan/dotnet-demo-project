@@ -1,12 +1,17 @@
-﻿using System;
+﻿using DMS_BLL;
+using DMS_View;
+using System;
+using System.Threading.Tasks;
 
 namespace dotnet_demo_project
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            ApiHelper.InitializeClient();
+            PeopleView.DisplayOptions();
         }
+
     }
 }
